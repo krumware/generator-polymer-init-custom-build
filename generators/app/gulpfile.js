@@ -14,6 +14,9 @@ const del = require('del');
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
+//const uglify = require('gulp-uglify');
+//const cssSlam = require('css-slam').gulp;
+//const htmlMinifier = require('gulp-html-minifier');
 const mergeStream = require('merge-stream');
 const polymerBuild = require('polymer-build');
 
@@ -63,7 +66,7 @@ function build() {
           // Uncomment these lines to add a few more example optimizations to your source files.
           // .pipe(gulpif(/\.js$/, uglify())) // Install gulp-uglify to use
           // .pipe(gulpif(/\.css$/, cssSlam())) // Install css-slam to use
-          // .pipe(gulpif(/\.html$/, htmlMinifier())) // Install gulp-html-minify to use
+          // .pipe(gulpif(/\.html$/, htmlMinifier())) // Install gulp-html-minifier to use
 
           // Remember, you need to rejoin any split inline code when you're done.
           .pipe(sourcesStreamSplitter.rejoin());
