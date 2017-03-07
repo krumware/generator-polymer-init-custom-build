@@ -19,7 +19,7 @@ const polymerBuild = require('polymer-build');
 // Here we add tools that will be used to process our source files.
 const imagemin = require('gulp-imagemin');
 
-// Additional plugins can be used to further optimize our source files after splitting.
+// Additional plugins can be used to optimize your source files after splitting.
 // Before using each plugin, install with `npm i --save-dev <package-name>`
 // const uglify = require('gulp-uglify');
 // const cssSlam = require('css-slam').gulp;
